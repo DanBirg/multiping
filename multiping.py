@@ -50,7 +50,7 @@ def checkPing(host):
     # Check the return code to determine if the ping was successful
     if result.returncode == 0:
         #return True
-        result = f'> {host:20}| {name:40}| Success {res:11}| {succ_dict[host] + 1:5}    |{fail_dict[host]:5}   '
+        result = f'> {host:20}| {name:40}| Success           | {succ_dict[host] + 1:5}    |{fail_dict[host]:5}   '
         succ_dict[host] = succ_dict[host] + 1
         result_all.append(result)
     else:
